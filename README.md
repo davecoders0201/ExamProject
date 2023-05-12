@@ -65,9 +65,7 @@ be sure if you connected with a device on debugging mode or use the emulator on 
 
 ### Login/Registration Page
 
-<Image src="Screenshots/Login.png" widht=500 height=500/>
-...
-<Image src="Screenshots/Register.png" widht=500 height=500/>
+<Image src="Screenshots/Login.png" widht=500 height=500/>...<Image src="Screenshots/Register.png" widht=500 height=500/>
 
 ### Home Page
 

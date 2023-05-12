@@ -1,4 +1,4 @@
-# This is the Ecommerce App in the React Native
+# This is the Book App in the React Native
 
 This Application was For the Designing Template of Book App.
 
@@ -6,6 +6,7 @@ This Application was For the Designing Template of Book App.
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.71-blue.svg?style=rounded-square)](https://facebook.github.io/react-native/)
 ![npm](https://img.shields.io/badge/npm-v4.18.2-blue.svg?style=rounded-square)
+[![Firebase](https://img.shields.io/badge/firebase-v9.20.0-blue.svg?style=rounded-square)](https://firebase.google.com/)
 
 ### What is React Native ?
 

@@ -65,17 +65,17 @@ be sure if you connected with a device on debugging mode or use the emulator on 
 
 ### Login/Registration Page
 
-<Image src="Screenshots/Login.png" widht=500 height=500/> <Image src="Screenshots/Reg.png" widht=500 height=500/>
+<Image src="Screenshots/Login.png" widht=500 height=500/>
 ...
-<Image src="Screenshots/Register.png" widht=500 height=500/> <Image src="Screenshots/Reg.png" widht=500 height=500/>
+<Image src="Screenshots/Register.png" widht=500 height=500/>
 
 ### Home Page
 
-<Image src="Screenshots/Home.png" widht=500 height=500/> <Image src="Screenshots/Reg.png" widht=500 height=500/>
+<Image src="Screenshots/Home.png" widht=500 height=500/>
 
 ### Book Details Page
 
-<Image src="Screenshots/BookDetail.png" widht=500 height=500/> <Image src="Screenshots/Reg.png" widht=500 height=500/>
+<Image src="Screenshots/BookDetail.png" widht=500 height=500/>
 
 ## Authors
 

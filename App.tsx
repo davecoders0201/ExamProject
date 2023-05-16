@@ -5,6 +5,7 @@ import Login from './screen/components/Login';
 import Reg from './screen/components/Reg';
 import TabNavigation from './navigation/tabNavigation';
 import BookDetails from './screen/externalScreens/BookDetails';
+import drawerNavigation from './navigation/drawerNavigation';
 
 // Create a Reference of the Stack which will display in the screen stack wise
 const Stack = createStackNavigator();
@@ -19,6 +20,7 @@ function App() {
         <Stack.Screen name="Reg" component={Reg} />
         <Stack.Screen name="Tabnavigation" component={TabNavigation} />
         <Stack.Screen name="BookDetails" component={BookDetails} />
+        {/* <Stack.Screen name="DrawerNavigation" component={drawerNavigation} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

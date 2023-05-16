@@ -35,15 +35,18 @@ const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.maincontainer}>
       <View style={styles.container}>
-        <Image
-          source={require('../../asset/horizontallinescolor.png')}
-          style={{
-            width: 20,
-            height: 20,
-            marginTop: 20,
-            marginLeft: 10,
-          }}
-        />
+        <TouchableOpacity
+          onPress={() => navigation.navigate('drawerNavigation')}>
+          <Image
+            source={require('../../asset/horizontallinescolor.png')}
+            style={{
+              width: 20,
+              height: 20,
+              marginTop: 20,
+              marginLeft: 10,
+            }}
+          />
+        </TouchableOpacity>
         <Text
           style={{
             color: '#190140',

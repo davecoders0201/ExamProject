@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {View, Text, Image} from 'react-native';
+import {Image} from 'react-native';
 import HomeScreen from '../screen/tabScreens/HomeScreen';
 import AnalyticsScreen from '../screen/tabScreens/AnalyticsScreen';
 import Microphone from '../screen/tabScreens/Microphone';

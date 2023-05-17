@@ -36,7 +36,7 @@ const HomeScreen = ({navigation}) => {
     <View style={styles.maincontainer}>
       <View style={styles.container}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('drawerNavigation')}>
+          onPress={() => navigation.navigate('DrawerNavigation')}>
           <Image
             source={require('../../asset/horizontallinescolor.png')}
             style={{

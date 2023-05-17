@@ -10,8 +10,6 @@ import drawerNavigation from './navigation/drawerNavigation';
 // Create a Reference of the Stack which will display in the screen stack wise
 const Stack = createStackNavigator();
 
-// This is the Class Which extends the React Components
-// and Render function is the Compulsary in the React.Components class
 function App() {
   return (
     <NavigationContainer>
@@ -20,7 +18,7 @@ function App() {
         <Stack.Screen name="Reg" component={Reg} />
         <Stack.Screen name="Tabnavigation" component={TabNavigation} />
         <Stack.Screen name="BookDetails" component={BookDetails} />
-        {/* <Stack.Screen name="DrawerNavigation" component={drawerNavigation} /> */}
+        <Stack.Screen name="DrawerNavigation" component={drawerNavigation} />
       </Stack.Navigator>
     </NavigationContainer>
   );

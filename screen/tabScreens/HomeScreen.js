@@ -16,6 +16,7 @@ const HomeScreen = ({navigation}) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredBooks, setFilteredBooks] = useState([]);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+
   useEffect(() => {
     const filtered = BooksApi.filter(book =>
       book.title.toLowerCase().includes(searchQuery.toLowerCase()),
@@ -26,6 +27,7 @@ const HomeScreen = ({navigation}) => {
   const handleSearchIconClick = () => {
     setIsSearchOpen(!isSearchOpen);
   };
+
   const handleSearchQueryChange = query => {
     setSearchQuery(query);
   };

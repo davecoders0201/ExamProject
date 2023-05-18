@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 import BooksApi from '../data/BookApi';
+import RatingStars from './Ratingstars';
 
 const BookDetails = ({navigation, route}) => {
   const id = route.params.bookId;
@@ -46,7 +47,12 @@ const BookDetails = ({navigation, route}) => {
             />
           </View>
         </View>
-
+        <View style={styles.stars}>
+          <Text style={{marginRight: 10, fontSize: 30, color: '#190140'}}>
+            4.5
+          </Text>
+          <RatingStars rating={selectedBook.rating} />
+        </View>
         <Text style={styles.description}>{selectedBook.description}</Text>
       </View>
     </View>
@@ -59,16 +65,12 @@ const styles = StyleSheet.create({
   maincontainer: {
     flex: 1,
   },
-
   container: {
     backgroundColor: '#fff',
     flexDirection: 'row',
     width: '100%',
     height: 60,
     justifyContent: 'space-between',
-  },
-  bookContainer: {
-    // flex: 1,
   },
   authorText: {
     color: 'orange',
@@ -86,6 +88,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
     marginTop: -110,
+    marginBottom: -110,
   },
   bookImage: {
     width: '90%',
@@ -98,5 +101,11 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     color: '#190140',
     marginTop: -10,
+  },
+  stars: {
+    // marginTop: -10,
+    marginBottom: 20,
+    marginLeft: 10,
+    flexDirection: 'row',
   },
 });

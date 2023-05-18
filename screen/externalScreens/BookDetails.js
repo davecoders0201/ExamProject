@@ -56,10 +56,10 @@ const BookDetails = ({navigation, route}) => {
         <View>
           <Text
             style={{
-              marginLeft: 15,
+              marginLeft: 10,
               marginBottom: 30,
               marginTop: -20,
-              fontSize: 16,
+              fontSize: 15,
             }}>
             892 Ratings on Google Play{' '}
           </Text>

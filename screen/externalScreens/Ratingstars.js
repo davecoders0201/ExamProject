@@ -18,7 +18,6 @@ const RatingStars = ({rating}) => {
       {stars.map(star => (
         <View key={star.key}>{star}</View>
       ))}
-      <Text style={styles.ratingText}>{rating}/5</Text>
     </View>
   );
 };

@@ -157,6 +157,7 @@ const styles = StyleSheet.create({
     height: 60,
     justifyContent: 'space-between',
   },
+
   categoryContainer: {
     backgroundColor: '#f7f7f7',
     flexDirection: 'row',
@@ -167,12 +168,14 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginLeft: 20,
   },
+
   categoryText1: {
     fontWeight: 'bold',
     fontSize: 19,
     marginTop: 15,
     color: '#190140',
   },
+
   categoryText2: {
     fontWeight: 'bold',
     fontSize: 19,
@@ -180,6 +183,7 @@ const styles = StyleSheet.create({
     marginTop: 15,
     color: '#190140',
   },
+
   searchInput: {
     flex: 1,
     height: 40,

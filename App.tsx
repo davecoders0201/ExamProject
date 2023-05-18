@@ -18,7 +18,7 @@ function App() {
         <Stack.Screen name="Reg" component={Reg} />
         <Stack.Screen name="Tabnavigation" component={TabNavigation} />
         <Stack.Screen name="BookDetails" component={BookDetails} />
-        <Stack.Screen name="DrawerNavigation" component={drawerNavigation} />
+        {/* <Stack.Screen name="DrawerNavigation" component={drawerNavigation} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

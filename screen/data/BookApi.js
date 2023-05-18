@@ -68,6 +68,16 @@ export const Books = [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     price: 5000,
     rating: '4.5',
+  },  
+  {
+    id: '8',
+    author: 'hi',
+    title: 'demo',
+    image: require('../../asset/Capture.png'),
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    price: 5000,
+    rating: '4.5',
   },
 ];
 

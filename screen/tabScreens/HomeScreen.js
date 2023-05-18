@@ -52,6 +52,7 @@ const HomeScreen = ({navigation}) => {
       </View>
     );
   };
+
   return (
     <View style={styles.maincontainer}>
       <View style={styles.container}>

@@ -73,7 +73,7 @@ be sure if you connected with a device on debugging mode or use the emulator on 
 
 ### Book Details Page
 
-<Image src="Screenshots/BookDetail.png" widht=500 height=500/>
+<Image src="Screenshots/BookDetails.png" widht=500 height=500/>
 
 ## Authors
 

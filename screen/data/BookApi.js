@@ -2,7 +2,7 @@ export const Books = [
   {
     id: '1',
     author: 'Manav',
-    title: 'Always Forgive you Enemies, nothing annoyes',
+    title: 'First',
     image: require('../../asset/Capture.png'),
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -12,7 +12,7 @@ export const Books = [
   {
     id: '2',
     author: 'shekhar',
-    title: 'get better',
+    title: 'second',
     image: require('../../asset/Capture2.png'),
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -22,7 +22,7 @@ export const Books = [
   {
     id: '3',
     author: 'raju',
-    title: 'get reliable',
+    title: 'third',
     image: require('../../asset/Capture3.png'),
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -32,7 +32,7 @@ export const Books = [
   {
     id: '4',
     author: 'ameer',
-    title: 'get clone',
+    title: 'fourth',
     image: require('../../asset/Capture4.png'),
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -42,7 +42,7 @@ export const Books = [
   {
     id: '5',
     author: 'keshu',
-    title: 'hello',
+    title: 'fifth',
     image: require('../../asset/Capture.png'),
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -52,7 +52,7 @@ export const Books = [
   {
     id: '6',
     author: 'demo',
-    title: 'demo',
+    title: 'sixth',
     image: require('../../asset/Capture.png'),
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -62,7 +62,7 @@ export const Books = [
   {
     id: '7',
     author: 'hi',
-    title: 'demo2',
+    title: 'seventh',
     image: require('../../asset/Capture.png'),
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever when an unknown printer took a galley of type and scrambled it to make a type specimen book.',

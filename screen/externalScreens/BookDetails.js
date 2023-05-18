@@ -114,7 +114,6 @@ const styles = StyleSheet.create({
     marginTop: -10,
   },
   stars: {
-    // marginTop: -10,
     marginBottom: 20,
     marginLeft: 10,
     flexDirection: 'row',

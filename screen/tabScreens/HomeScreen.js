@@ -6,12 +6,30 @@ import {
   Image,
   FlatList,
   ScrollView,
+  TextInput,
 } from 'react-native';
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import BooksApi from '../data/BookApi';
 
 // This is the main HomeScreen Function in the File
 const HomeScreen = ({navigation}) => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredBooks, setFilteredBooks] = useState([]);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  useEffect(() => {
+    const filtered = BooksApi.filter(book =>
+      book.title.toLowerCase().includes(searchQuery.toLowerCase()),
+    );
+    setFilteredBooks(filtered);
+  }, [searchQuery]);
+
+  const handleSearchIconClick = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
+  const handleSearchQueryChange = query => {
+    setSearchQuery(query);
+  };
+
   const bookCard = ({item}) => {
     return (
       <View style={styles.bookmainContainer}>
@@ -56,16 +74,31 @@ const HomeScreen = ({navigation}) => {
           }}>
           All Books
         </Text>
-        <Image
-          source={require('../../asset/magnifying-glass.png')}
-          style={{
-            width: 30,
-            height: 30,
-            marginTop: 15,
-            marginRight: 5,
-          }}
-        />
+        <TouchableOpacity onPress={handleSearchIconClick}>
+          <Image
+            source={require('../../asset/magnifying-glass.png')}
+            style={{
+              width: 30,
+              height: 30,
+              marginTop: 15,
+              marginRight: 5,
+            }}
+          />
+        </TouchableOpacity>
       </View>
+
+      {isSearchOpen && (
+        <View style={{height: 40}}>
+          <TextInput
+            style={styles.searchInput}
+            value={searchQuery}
+            onChangeText={handleSearchQueryChange}
+            placeholder="Search"
+            autoFocus
+          />
+        </View>
+      )}
+
       <View style={styles.categoryContainer}>
         <Text style={styles.categoryText1}>Ebook</Text>
         <Text style={styles.categoryText2}>Audiobooks</Text>
@@ -78,7 +111,7 @@ const HomeScreen = ({navigation}) => {
           }}>
           <FlatList
             keyExtractor={item => item.id}
-            data={BooksApi}
+            data={filteredBooks}
             renderItem={bookCard}
             numColumns="2"
           />
@@ -143,5 +176,13 @@ const styles = StyleSheet.create({
     marginLeft: 40,
     marginTop: 15,
     color: '#190140',
+  },
+  searchInput: {
+    flex: 1,
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginRight: 10,
+    paddingHorizontal: 10,
   },
 });

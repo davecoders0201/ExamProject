@@ -53,6 +53,17 @@ const BookDetails = ({navigation, route}) => {
           </Text>
           <RatingStars rating={selectedBook.rating} />
         </View>
+        <View>
+          <Text
+            style={{
+              marginLeft: 15,
+              marginBottom: 30,
+              marginTop: -20,
+              fontSize: 16,
+            }}>
+            892 Ratings on Google Play{' '}
+          </Text>
+        </View>
         <Text style={styles.description}>{selectedBook.description}</Text>
       </View>
     </View>

@@ -94,9 +94,9 @@ const Login = ({navigation}) => {
 
   return (
     <AuthContext.Provider value={{isAuthenticated, setIsAuthenticated}}>
-      {/* ---------------------Main View----------------- */}
+      {/* -----------------Main View----------------- */}
       <View style={styles.container}>
-        {/* ---------------------Email View----------------- */}
+        {/* -----------------Email View----------------- */}
         <View style={styles.inputView}>
           <TextInput
             style={styles.TextInput}
@@ -107,7 +107,7 @@ const Login = ({navigation}) => {
           />
         </View>
 
-        {/* ---------------------Password View----------------- */}
+        {/* -----------------Password View----------------- */}
         <View style={styles.inputView}>
           <TextInput
             style={styles.TextInput}
@@ -118,7 +118,7 @@ const Login = ({navigation}) => {
             ref={passwordInputRef}
           />
 
-          {/* ---------------------Icon Button----------------- */}
+          {/* -----------------Icon Button----------------- */}
           <TouchableOpacity
             style={styles.wrapperIcon}
             onPress={() => setSeePassword(!seePassword)}>
@@ -133,7 +133,7 @@ const Login = ({navigation}) => {
           </TouchableOpacity>
         </View>
 
-        {/* ---------------------Button Validation----------------- */}
+        {/* -----------------Button Validation----------------- */}
         {!email || !password ? (
           <TouchableOpacity
             style={styles.disableLoginBtn}
@@ -160,10 +160,10 @@ const Login = ({navigation}) => {
   );
 };
 
-//-------------This is the Important Export Function in the File--------------
+//-------------This is the Important Export Function in the File-------------
 export default Login;
 
-//------------This is the StyleSheet we also called the Css of the React-native-----------------
+//------------This is the StyleSheet we also called the Css of the React-native------------
 const styles = StyleSheet.create({
   container: {
     flex: 1,
